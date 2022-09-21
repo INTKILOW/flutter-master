@@ -9,10 +9,7 @@ import 'package:get/get.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:flutter_master/user_controller.dart';
 import 'package:flutter_master/utils/aliyun_oss.dart';
-import 'package:flutter_master/utils/view_utils.dart';
-import 'package:flutter_master/widgets/change_default_house.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:intl/intl.dart';
 

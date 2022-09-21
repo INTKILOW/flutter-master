@@ -1,6 +1,4 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:flutter_master/bean/car_data.dart';
-import 'package:flutter_master/bean/house_data.dart';
 
 part 'user.g.dart';
 
@@ -19,10 +17,9 @@ class User {
 
   final List<String> roleList;
   final List<String>? pushTags;
-  final List<HouseData> houseList;
 
   User(this.avatar, this.gender, this.isWorker, this.name, this.phone,
-      this.token, this.roleList, this.houseList, this.points, this.unReadNum, this.pushTags);
+      this.token, this.roleList, this.points, this.unReadNum, this.pushTags);
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
 

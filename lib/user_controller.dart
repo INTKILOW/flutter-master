@@ -7,8 +7,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fluwx/fluwx.dart';
 import 'package:get/get.dart';
 import 'package:jpush_flutter/jpush_flutter.dart';
-import 'package:flutter_master/apis.dart';
-import 'package:flutter_master/bean/house_data.dart';
 import 'package:flutter_master/bean/user.dart';
 import 'package:flutter_master/core/http/http_manager.dart';
 import 'package:flutter_master/main.dart';
@@ -105,7 +103,7 @@ class UserController extends GetxController {
     if (_prefs.containsKey(tokenKey)) {
       try {
         var user = await HttpManager().getAsync(
-          url: initUserApi,
+          url: "init",
           jsonParse: (data) => User.fromJson(data["data"]),
         );
         await updateUser(user);

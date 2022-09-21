@@ -14,9 +14,6 @@ User _$UserFromJson(Map<String, dynamic> json) => User(
       json['phone'] as String,
       json['token'] as String,
       (json['roleList'] as List<dynamic>).map((e) => e as String).toList(),
-      (json['houseList'] as List<dynamic>)
-          .map((e) => HouseData.fromJson(e as Map<String, dynamic>))
-          .toList(),
       json['points'] as int?,
       json['unReadNum'] as int,
       (json['pushTags'] as List<dynamic>?)?.map((e) => e as String).toList(),
@@ -33,5 +30,4 @@ Map<String, dynamic> _$UserToJson(User instance) => <String, dynamic>{
       'unReadNum': instance.unReadNum,
       'roleList': instance.roleList,
       'pushTags': instance.pushTags,
-      'houseList': instance.houseList,
     };
